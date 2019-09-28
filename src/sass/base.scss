@@ -17,3 +17,9 @@ body {
   color: $main-font-color;
   min-width: $page-width;
 }
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}  

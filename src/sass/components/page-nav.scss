@@ -1,0 +1,6 @@
+.page-navigation{
+  @include center-flex('ver');
+  justify-content: space-between;
+  background-color: $theme-white-color;
+    
+}
