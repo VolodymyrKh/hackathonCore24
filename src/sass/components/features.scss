@@ -1,7 +1,48 @@
+.features{
+  padding: 60px 0;
+}
+
+.features__item {
+  display: flex;
+  
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 65px;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 30px 0 6px;
+  }
+}
+
 $features-icons: bell, board, hub, share, star, thumb;
 
 @each $icon in $features-icons {
   .features__item--#{$icon}-icon::before {
     background-image: url('../images/features-icons/icon-#{$icon}.svg');
-  }  
+  }
+}
+
+.features__item--name {
+  font-family: $secondary-font-stack;
+  font-size: $descr-font-size;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: $main-font-color;
+  margin-bottom: 22px;
+}
+
+.features__item--details {
+  font-family: $main-font-stack;
+  font-size: 13px;
+  line-height: 1.84;
+  color: $main-font-color;
+  text-align: left;
 }

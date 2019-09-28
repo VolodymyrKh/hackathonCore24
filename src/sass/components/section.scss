@@ -1,0 +1,37 @@
+.section__title--name {
+  font-family: $secondary-font-stack;
+  font-size: $title-font-size;
+  line-height: 1.28;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $theme-color-primary-accents;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: $main-font-color;
+  }
+
+  &::before {
+    margin-right: 10px;
+  }
+
+  &::after {
+    margin-left: 10px;
+  }
+}
+
+.section__title--descr {
+  font-family: $main-font-stack;
+  font-size: $descr-font-size;
+  line-height: 2;
+  color: $main-font-color;
+  margin-bottom: 30px;
+  text-align: center;
+}
