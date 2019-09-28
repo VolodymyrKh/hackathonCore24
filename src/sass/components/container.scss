@@ -8,11 +8,13 @@
 @media (min-width: 768px) {
   .container {
     width: $container-width-tablet;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: $container-width-desktop;
+    margin: 0 auto;
   }
 }
