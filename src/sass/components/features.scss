@@ -1,0 +1,7 @@
+$features-icons: bell, board, hub, share, star, thumb;
+
+@each $icon in $features-icons {
+  .features__item--#{$icon}-icon::before {
+    background-image: url('../images/features-icons/icon-#{$icon}.svg');
+  }  
+}
