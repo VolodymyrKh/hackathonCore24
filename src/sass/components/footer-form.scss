@@ -1,0 +1,55 @@
+.wrapper-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type="name"] {
+    width: 270px;
+    height: 44px;
+    border-radius: 4px;
+
+}
+input[type="mail"] {
+    width: 270px;
+    height: 44px;
+    border-radius: 4px;
+
+}
+
+@media (max-width: 767px){
+input[type="message"]{
+    width: 270px;
+    
+}
+
+}
+
+
+
+@media (min-width: 768px){
+    input[type="message"]{
+        width: 570px;
+       
+    }
+    
+    }
+    
+
+
+
+input[type="message"]{
+    height: 179px;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    width: 170px;
+    height: 50px;
+    background-color: $theme-color-secondary-accents;
+    border-radius: 4px;
+    border-style: none;
+    color:$theme-white-color;
+    cursor: pointer; 
+    text-transform: uppercase;
+
+}
