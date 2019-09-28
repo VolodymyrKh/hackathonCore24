@@ -1,7 +1,52 @@
-.section{
+.section__title--name {
+  font-family: $secondary-font-stack;
+  font-size: $descr-font-size;
+  line-height: 2;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $theme-color-primary-accents;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
 
+  &::before,
+  &::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: $main-font-color;
+  }
+
+  &::before {
+    margin-right: 10px;
+  }
+
+  &::after {
+    margin-left: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $title-font-size;
+    line-height: 1.28;
+  }
 }
 
-.section__title{
-    
+.section__title--descr {
+  font-family: $main-font-stack;
+  font-size: $main-font-size;
+  line-height: 1.8;
+  color: $main-font-color;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: $descr-font-size;
+    line-height: 2;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0px 92px;
+  }
 }
+

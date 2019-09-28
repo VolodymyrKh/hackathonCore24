@@ -1,7 +1,99 @@
+.features {
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: 120px 0;
+  }
+}
+
+.features__item {
+  display: flex;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 30px;
+    width: 65px;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0 30px 0 6px;
+  }
+
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
 $features-icons: bell, board, hub, share, star, thumb;
 
 @each $icon in $features-icons {
   .features__item--#{$icon}-icon::before {
     background-image: url('../images/features-icons/icon-#{$icon}.svg');
-  }  
+  }
+}
+
+.features__item--name {
+  font-family: $secondary-font-stack;
+  font-size: $descr-font-size;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: $main-font-color;
+  margin-bottom: 12px;
+}
+
+.features__item--details {
+  font-family: $main-font-stack;
+  font-size: 13px;
+  line-height: 1.84;
+  color: $main-font-color;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    max-width: 320px;
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 90px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .feature__list {
+    position: relative;
+    padding-top: 60px;
+
+    &::before {
+      content: '';
+      display: block;
+      background-image: url(../../images/screen.png);
+      height: 660px;
+      width: 320px;
+      background-size: cover;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: center top;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+  }
+
+  .features__item {
+    max-width: 34%;
+    padding: 0 30px;
+  }
 }
