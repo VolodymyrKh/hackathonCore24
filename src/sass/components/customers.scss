@@ -1,0 +1,136 @@
+.customers {
+  text-align: center;
+  padding-bottom: 129px;
+}
+
+.customers-card {
+  padding-top: 66px;
+}
+
+.customers-card_img {
+  margin: 0 auto;
+}
+
+.customers-text_name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.customers-text_company {
+  padding-bottom: 100px;
+  font-size: 13px;
+}
+
+.customers-text_information {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 1.9;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.customers-text_information::before {
+  content: '“';
+  font-size: 150px;
+  color: rgba($color: #d7d6d6, $alpha: 0.6);
+  // width: 50px;
+  height: 45px;
+  position: absolute;
+  z-index: 2;
+  font-family: $main-font-stack;
+  font-family: $decor-font-text;
+}
+
+.carousel-indicators {
+  bottom: 5%;
+  left: 5%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 5%;
+  text-align: center;
+  z-index: 2;
+  padding-top: 90px;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+}
+
+.carousel-indicator {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  padding: 5px 5px;
+  color: rgba($color: #282528, $alpha: 0.3);
+  transition: background 0.1s ease-in-out;
+}
+
+.carousel-indicator:hover {
+  color: rgba($color: #1ab798, $alpha: 1);
+}
+
+.carousel-active:checked + .carousel-item .carousel-caption {
+  transition: opacity 0.6s ease-in;
+  opacity: 1;
+}
+
+/* If you`re needing more than 3 banners, maybe you might be using another way to represent your info... ;-) */
+#carousel-1:checked
+  ~ .carousel-indicators
+  .carousel-indicator[for='carousel-1'],
+#carousel-2:checked
+  ~ .carousel-indicators
+  .carousel-indicator[for='carousel-2'],
+#carousel-3:checked
+  ~ .carousel-indicators
+  .carousel-indicator[for='carousel-3'],
+#carousel-4:checked
+  ~ .carousel-indicators
+  .carousel-indicator[for='carousel-4'] {
+  color: #007f7f;
+}
+
+@media (min-width: 320px) {
+  .customers-text_title {
+    align-items: flex-start;
+  }
+
+  .customers-text_title::before,
+  .customers-text_title::after {
+    margin-top: 20px;
+  }
+
+  .customers-text_information::before {
+    left: -30px;
+    top: -106px;
+    position: absolute;
+  }
+  .customers-text_information {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 767px) {
+  .customers-text_information::before {
+    left: -8px;
+    bottom: 263px;
+    position: absolute;
+  }
+  .customers-text_information {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .customers-text_information::before {
+    left: -20px;
+    bottom: 166px;
+    position: absolute;
+  }
+}

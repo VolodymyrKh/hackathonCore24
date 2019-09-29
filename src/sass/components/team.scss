@@ -12,7 +12,7 @@
   position: relative;
   margin: 0 auto;
   width: 270px;
-
+  
   &:hover .socials {
     opacity: 0.9;
   }
@@ -37,6 +37,7 @@
   opacity: 0;
   color: $theme-white-color;
   padding: 0 20px;
+  transition: opacity 0.1s ease-in;
 }
 
 .team-member .socials__description {
@@ -88,6 +89,10 @@
   text-align: center;
 }
 
+.team-member__name {
+  padding: 5px 0;
+}
+
 .team-member__position {
   font-size: 13px;
   color: rgba(6, 32, 51, 0.561);
@@ -108,7 +113,7 @@
     margin-bottom: 50px;
   }
 
-  .team-member:nth-last-child(-n+2) {
+  .team-member:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 }
