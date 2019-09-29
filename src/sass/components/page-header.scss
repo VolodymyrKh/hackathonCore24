@@ -4,7 +4,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-
+  
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx){
+     background-image: url(../../images/BG-img@2x.png);
+     }
+  
   @media (max-width: 767px){
    padding-top: 20px;
    padding-bottom: 106px;
