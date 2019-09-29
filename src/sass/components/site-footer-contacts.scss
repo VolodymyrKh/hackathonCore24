@@ -1,11 +1,82 @@
+.social{
+    padding-top: 40px;
+}
 .site-footer-contacts_touch{
-    display: flex;
-    justify-content: center;
+     
     color: $theme-white-color;
+    padding-bottom: 10px;
+    font-family: $secondary-font-stack;
 }
 
 .site-footer-contacts_info{
-    display: flex;
-    justify-content: center;
-    color: rgba(255, 255, 255, 50%);
+    
+    color: rgba(255, 255, 255, 0.5);
+    
+    font-family: $secondary-font-stack;
+    font-size: 14px;
+    
 }
+
+
+
+.site-footer-contacts_tel {
+    color: $footer-color-contacts;
+    
+  }
+  
+  .site-footer-contacts_email {
+    color: $footer-color-contacts;
+    
+  
+  }
+  
+
+@media (max-width: 767px) {
+    .site-footer-contacts_touch{
+        text-align: center;
+    }
+    .site-footer-contacts_info{
+        text-align: center;
+        padding: 0;
+    }
+    
+.site-footer-contacts_tel {
+    
+    text-align: center;
+  }
+  
+  .site-footer-contacts_email {
+   
+    text-align: center;
+  
+  }
+
+  
+  }
+  
+  @media (min-width: 768px) {
+    
+  }
+  
+  @media (min-width: 1200px) {
+    .contacts-wrapp{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .social{
+        display: flex;
+    }
+
+.site-footer-contacts{
+    width: 49%;
+    margin: 0;
+    padding-right: 140px;
+}
+.wrapper-form{
+    width: 49%;
+    margin: 0;
+}
+
+
+  }
