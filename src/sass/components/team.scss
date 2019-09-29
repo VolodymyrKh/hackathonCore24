@@ -13,11 +13,11 @@
   margin: 0 auto;
   width: 270px;
   
-  &:hover .socials {
+  &:hover .socials, &:focus .socials {
     opacity: 0.9;
   }
 
-  &:hover .team-member__name {
+  &:hover .team-member__name, &:focus .team-member__name {
     color: $theme-color-primary-accents;
   }
 }
@@ -71,7 +71,7 @@
   height: 42px;
   background-color: rgba(0, 0, 0, 0.3);
 
-  &:hover {
+  &:hover, &:focus {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }

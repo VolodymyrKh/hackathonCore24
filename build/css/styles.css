@@ -913,11 +913,13 @@ p {
   width: 270px;
 }
 
-.team-member:hover .socials {
+.team-member:hover .socials,
+.team-member:focus .socials {
   opacity: 0.9;
 }
 
-.team-member:hover .team-member__name {
+.team-member:hover .team-member__name,
+.team-member:focus .team-member__name {
   color: #1ab798;
 }
 
@@ -968,7 +970,8 @@ p {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.socials__link:hover {
+.socials__link:hover,
+.socials__link:focus {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
