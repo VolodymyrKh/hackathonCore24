@@ -12,7 +12,6 @@
   position: relative;
   margin: 0 auto;
   width: 270px;
-  margin-bottom: 50px;
 
   &:hover .socials {
     opacity: 0.9;
@@ -40,9 +39,7 @@
   padding: 0 20px;
 }
 
-.team-member
-
-.socials__description {
+.team-member .socials__description {
   text-align: center;
   line-height: 24px;
 }
@@ -91,8 +88,27 @@
   text-align: center;
 }
 
-.team-member__position{
+.team-member__position {
   font-size: 13px;
   color: rgba(6, 32, 51, 0.561);
 }
-  
+
+@media (max-width: 767px) {
+  .team-member {
+    margin-bottom: 50px;
+  }
+
+  .team-member:last-child() {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .team-member {
+    margin-bottom: 50px;
+  }
+
+  .team-member:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
