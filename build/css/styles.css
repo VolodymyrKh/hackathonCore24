@@ -1190,6 +1190,7 @@ textarea {
   margin-bottom: 40px;
   text-align: start;
   padding: 10px;
+  resize: none;
 }
 
 input[type="submit"] {
