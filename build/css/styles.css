@@ -508,7 +508,7 @@ img {
   width: 28px;
   height: 19px;
   background-color: transparent;
-  background-image: url(../../images/burger.png);
+  background-image: url(../images/burger.png);
   transition: background-color 0.2s linear;
 }
 
@@ -711,7 +711,7 @@ p {
   content: '';
   width: 7px;
   height: 12px;
-  background-image: url(../../images/arrow.png);
+  background-image: url(../images/arrow.png);
   margin-right: 16px;
 }
 
@@ -720,7 +720,7 @@ p {
   background-color: #1ab798;
   font-size: 20px;
   line-height: 36px;
-  background-image: url(../../images/cloud.png);
+  background-image: url(../images/cloud.png);
   background-repeat: no-repeat;
   background-position: 22px 12px;
   font-weight: semibold;
@@ -1394,7 +1394,7 @@ input[type="email"]:invalid {
   .feature__list::before {
     content: '';
     display: block;
-    background-image: url(../../images/screen.png);
+    background-image: url(../images/screen.png);
     height: 660px;
     width: 320px;
     background-size: cover;
@@ -1611,6 +1611,6 @@ input[type="email"]:invalid {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .page-header {
-    background-image: url(../../images/BG-img@2x.png);
+    background-image: url(../images/BG-img@2x.png);
   }
 }

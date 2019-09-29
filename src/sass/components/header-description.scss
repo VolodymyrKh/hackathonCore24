@@ -68,7 +68,7 @@ p {
   content: '';
   width: 7px;
   height: 12px;
-  background-image: url(../../images/arrow.png);
+  background-image: url(../images/arrow.png);
   margin-right: 16px;
 }
 
@@ -77,7 +77,7 @@ p {
   color: $theme-white-color;
   background-color: $theme-color-primary-accents;
   @include font-settings(20px, 36px);
-  background-image: url(../../images/cloud.png);
+  background-image: url(../images/cloud.png);
   background-repeat: no-repeat;
   background-position: 22px 12px;
   font-weight: semibold;
