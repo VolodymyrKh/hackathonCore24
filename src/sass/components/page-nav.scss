@@ -33,7 +33,7 @@
     // opacity: 0.3;
   }
  
-  &:hover,
+  &:hover > .menu,
   &:focus > .menu {
     display: block;
   }
