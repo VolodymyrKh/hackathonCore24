@@ -517,7 +517,7 @@ img {
   outline: 0;
 }
 
-.menu-button:hover,
+.menu-button:hover > .menu,
 .menu-button:focus > .menu {
   display: block;
 }
