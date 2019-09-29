@@ -842,6 +842,11 @@ p {
   width: 100%;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .video-section__description {
   color: #ffffff;
   margin-bottom: 25px;
@@ -1421,6 +1426,19 @@ input[type="email"]:invalid {
 
   .video-section__container {
     max-width: 50%;
+    text-align: left;
+  }
+
+  .app-list {
+    justify-content: left;
+  }
+
+  .app-list__item:first-child {
+    margin-left: 0;
+  }
+
+  .flex-container {
+    flex-wrap: nowrap;
   }
 
   .customers-text_information::before {

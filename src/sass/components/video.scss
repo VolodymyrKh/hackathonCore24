@@ -6,13 +6,18 @@
   flex-wrap: wrap;
   padding-top: 30px;
 
-  & .container{
-    margin-bottom: 25px; 
+  & .container {
+    margin-bottom: 25px;
   }
 }
 
 .video-section__container {
   width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .video-section__description {
@@ -105,5 +110,19 @@
 @media (min-width: 1200px) {
   .video-section__container {
     max-width: 50%;
+    text-align: left;
+    // padding-left: 30px;
+  }
+
+  .app-list {
+    justify-content: left;
+  }
+
+  .app-list__item:first-child {
+    margin-left: 0;
+  }
+
+  .flex-container {
+    flex-wrap: nowrap;
   }
 }
