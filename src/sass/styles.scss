@@ -1,0 +1,32 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables';
+@import './helpers/placeholders';
+@import './helpers/mixins';
+@import './normalize';
+@import './fonts';
+@import './base';
+
+/* Components */
+
+@import './components/button';
+@import './components/container';
+@import './components/page-header';
+@import './components/page-nav';
+@import './components/site-logo';
+@import './components/site-navigation';
+@import './components/section';
+@import './components/header-description';
+@import './components/features';
+@import './components/video';
+@import './components/team';
+@import './components/customers';
+@import './components/contacts';
+@import './components/footer';
+@import "./components/site-footer";
+@import "./components/site-footer-contacts.scss";
+@import "./components/site-footer.scss";
+@import "./components/footer.social.scss";
+@import "./components/footer-title.scss";
+@import "./components/footer-form.scss";

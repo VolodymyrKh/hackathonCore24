@@ -1,0 +1,59 @@
+.footer-wrap{
+    padding: 64px 0px;
+    
+}
+
+
+@media (max-width: 767px) {
+.conteiner{
+    width: $container-width-mobile;
+    margin: 0 auto;
+}
+input[type="message"]{
+    width: 270px;
+    
+}
+
+}
+
+@media (min-width: 768px) {
+.conteiner{
+    width: $container-width-tablet;
+    margin: 0 auto;
+}
+input[type="message"]{
+    width: 570px;
+   
+}
+
+}
+
+@media (min-width: 768px) {
+    .conteiner{
+        width: $container-width-desktop;
+        margin: 0 auto;
+    }
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

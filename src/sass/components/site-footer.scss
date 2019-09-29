@@ -1,0 +1,6 @@
+.site-footer{
+    
+    
+    @include bg-image($path: '../images/footer-img/footer-bag.png', $size: cover, $repeat: no-repeat, $pos: center);
+    
+}
