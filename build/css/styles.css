@@ -520,6 +520,7 @@ img {
 .menu-button:hover > .menu,
 .menu-button:focus > .menu {
   display: block;
+  outline: 0;
 }
 
 .menu {
@@ -553,6 +554,7 @@ img {
 
 .menu-item__link:hover,
 .menu-item__link:focus {
+  outline: 0;
   opacity: 1;
 }
 
