@@ -1,0 +1,20 @@
+.page-header{
+  background-image: url(../images/BG-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  @media (max-width: 767px){
+   padding-top: 20px;
+   padding-bottom: 106px;
+  //  margin-bottom: 58px;
+  }
+
+  @media (min-width: 768px){
+    padding-top: 30px;
+    padding-bottom: 150px;
+    // margin-bottom: 118px;   
+  }
+}
+
