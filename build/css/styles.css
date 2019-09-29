@@ -638,6 +638,7 @@ img {
 .site-navigation__link:hover,
 .site-navigation__link:focus {
   opacity: 1;
+  outline: 0;
 }
 
 .section__title--name {
