@@ -1,0 +1,123 @@
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header-description {
+  position: relative;
+
+  @media (max-width: 767px) {
+    .iphone-5S,
+    .iphone-6S,
+    .iphone-tablet-5S,
+    .iphone-tablet-6S {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .iphone-5S,
+    .iphone-6S {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .iphone-tablet-5S,
+    .iphone-tablet-6S {
+      display: none;
+    }
+  }
+}
+
+.main-title {
+  font-family: $secondary-font-stack;
+  @include font-settings(25px, 36px);
+  font-weight: bold;
+
+  @media (min-width: 768px) {
+    @include font-settings(42px, 50px);
+  }
+}
+
+.secondary-title {
+  @include font-settings(18px, 24px);
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    @include font-settings(22px, 36px);
+    margin-bottom: 44px;
+  }
+}
+
+.list-description {
+  @extend %list;
+  @include font-settings(12px, 36px);
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    @include font-settings(16px, 36px);
+    margin-bottom: 70px;
+  }
+}
+
+.item-text::before {
+  display: inline-block;
+  content: '';
+  width: 7px;
+  height: 12px;
+  background-image: url(../../images/arrow.png);
+  margin-right: 16px;
+}
+
+.download_button {
+  @extend %button;
+  color: $theme-white-color;
+  background-color: $theme-color-primary-accents;
+  @include font-settings(20px, 36px);
+  background-image: url(../../images/cloud.png);
+  background-repeat: no-repeat;
+  background-position: 22px 12px;
+  font-weight: semibold;
+  width: 212px;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 46px;
+  margin-left: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: #3ba48f;
+    outline: 0;
+  }
+}
+
+.iphone-5S,
+.iphone-6S,
+.iphone-tablet-5S,
+.iphone-tablet-6S {
+  position: absolute;
+}
+
+.iphone-tablet-5S {
+  right: 65px;
+  top: 188px;
+}
+
+.iphone-tablet-6S {
+  right: 0;
+  top: 150px;
+}
+
+.iphone-5S {
+  right: 210px;
+  top: 34px;
+}
+
+.iphone-6S {
+  right: 100px;
+  top: -25px;
+}

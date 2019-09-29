@@ -1,18 +1,15 @@
-@media (max-width: 767px) {
-  .container {
-    width: $container-width-mobile;
-    margin: 0 auto;
-  }
-}
+.container {
+  margin: 0 auto;
 
-@media (min-width: 768px) {
-  .container {
+  @media (max-width: 767px) {
+    width: $container-width-mobile;
+  }
+
+  @media (min-width: 768px) {
     width: $container-width-tablet;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
+  @media (min-width: 1200px) {
     width: $container-width-desktop;
   }
 }

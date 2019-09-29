@@ -1,25 +1,43 @@
 <header class="page-header">
     <nav class="page-navigation">
-        <div class="container">
-          <a href="#" class="link site-logo">Mobileapp</a>
+        <div class="container page-navigation__container">
+          <a href="#" class="site-logo">Mobileapp</a>
 
-        <button class="button menu-button">menu button</button>
+        <button class="button menu-button">
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-item__link" href="#">home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__link" href="#">features</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__link" href="#">team</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__link" href="#">testimonials</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item__link" href="#">contact</a>
+            </li>
+          </ul>
+        </button>
 
-      <ul class="list site-navigation">
+      <ul class="site-navigation">
             <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__underline-link">Home</a>
+              <a href="#" class="site-navigation__link">Home</a>
             </li>
             <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__underline-link">FEATURES</a>
+              <a href="#" class="site-navigation__link">FEATURES</a>
             </li>
             <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__underline-link">team</a>
+              <a href="#" class="site-navigation__link">team</a>
             </li>
             <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__underline-link">Testimonials</a>
+              <a href="#" class="site-navigation__link">Testimonials</a>
             </li>
             <li class="site-navigation__item">
-              <a href="#" class="link site-navigation__underline-link">CONTACT</a>
+              <a href="#" class="site-navigation__link">CONTACT</a>
             </li>
                           
        </ul>
@@ -27,22 +45,24 @@
     </nav>  
 
     <div class="header-description container">
-        <p class="template">Introducing Mobileapp</p>
-        <p class="welcome">Maecenas vitae tellus sapien. Praesent</p>
+        <h1 class="main-title">Introducing Mobileapp</h1>
+        <h2 class="secondary-title">Maecenas vitae tellus sapien. Praesent</h2>
         <ul class="list-description">
-            <li class="list-description">
-              <p>semper scelerisque tristique a enim</p>
+            <li class="list-description__item">
+              <p class="item-text">semper scelerisque tristique a enim</p>
             </li>
-            <li class="list-description">
-                <p>Integer ut mattis nulla, eget vehicula elit </p>
+            <li class="list-description__item">
+                <p class="item-text">Integer ut mattis nulla, eget vehicula elit </p>
             </li>
-            <li class="list-description">
-                <p>Praesent rutrum ac nunc et</p>
+            <li class="list-description__item">
+                <p class="item-text">Praesent rutrum ac nunc et</p>
             </li>
         </ul>
         <button class="button download_button">Download</button>
-    
-        <img class="iphone-5S" src="#" alt="iphone-5S">
-        <img class="iphone-6s" src="#" alt="iphone-6s">
+        <img class="iphone-6S" src="../images/6S.png" alt="iphone-6s">
+        <img class="iphone-5S" src="../images/5S.png" alt="iphone-5S">
+        <img class="iphone-tablet-6S" src="../images/Tablet_6S.png" alt="iphone-tablet-6s">
+        <img class="iphone-tablet-5S" src="../images/Tablet_5S.png" alt="iphone-tablet-5S">
+        
     </div>
 </header>  

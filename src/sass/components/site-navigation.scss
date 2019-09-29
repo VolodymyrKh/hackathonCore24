@@ -1,8 +1,25 @@
-.site-navigation{
- 
-    @media (max-width: 767px){
-        display: none;
-    }
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  min-width: 450px;
 
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
 
+.site-navigation__link {
+  display: block;
+  color: $main-font-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  @include font-settings(13px, 36px);
+  font-weight: bold;
+  opacity: 0.6;
+  transition: opacity 0.2s linear;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }

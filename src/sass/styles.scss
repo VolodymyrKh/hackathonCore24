@@ -4,7 +4,6 @@
 @import './helpers/variables';
 @import './helpers/placeholders';
 @import './helpers/mixins';
-@import './helpers/wrapper';
 @import './normalize';
 @import './fonts';
 @import './base';
@@ -18,6 +17,7 @@
 @import './components/site-logo';
 @import './components/site-navigation';
 @import './components/section';
+@import './components/header-description';
 @import './components/features';
 @import './components/team';
 @import './components/customers';
